@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75213723-12"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-75213723-12');
+    </script>
+  <meta charset="utf-8">
+  <title>Loukas Anastasiou | Software Engineer & UX Designer</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/js/dist/kursor.css">
+  <script src="./assets/js/dist/kursor.js"></script>
+  <script>
+    var kursorx = new kursor({
+        type: 2,
+        removeDefaultCursor: true
+    });
+    (function(){
+        if(location.hash === 'en'){
+            history.pushState({}, '', '/en');
+        }
+        if($(window).width() > 1024){
+            $(document).mousemove(function(e){
+                $('.proj1').css('top', e.pageY - 250 + 'px');
+                $('.proj1').css('left', e.pageX - 250 + 'px');
+            });
+            $(document).mousemove(function(e){
+                $('.proj2').css('top', e.pageY - 250 + 'px');
+                $('.proj2').css('left', e.pageX - 250 + 'px');
+            });
+            $(document).mousemove(function(e){
+                $('.proj3').css('top', e.pageY - 250 + 'px');
+                $('.proj3').css('left', e.pageX - 250 + 'px');
+            });
+            $(document).mousemove(function(e){
+                $('.proj4').css('top', e.pageY - 250 + 'px');
+                $('.proj4').css('left', e.pageX - 250 + 'px');
+            });
+            $(document).mousemove(function(e){
+                $('.proj5').css('top', e.pageY - 250 + 'px');
+                $('.proj5').css('left', e.pageX - 250 + 'px');
+            });
+            $(document).mousemove(function(e){
+                $('.proj6').css('top', e.pageY - 250 + 'px');
+                $('.proj6').css('left', e.pageX - 250 + 'px');
+            });
+        }
+        $(document).mousemove(function(e){
+            $('.about').css('left', e.pageX / 50 + 'px');
+            $('.me').css('right', e.pageX * 2 / 50 + 'px');
+        });
+    }());
+  </script>
+<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+</html>
